@@ -23,7 +23,7 @@ e = 65537
 d = modinv(e,t)
 c = 861270243527190895777142537838333832920579264010533029282104230006461420086153423
 
-plain = pow(c, d, n)
+plain = pow(c, d, n) #var from text
 print(plain)
 print(hex(plain))
 print(bytearray.fromhex(hex(plain)[2:]).decode()) #decodes from hex -> plaintext
